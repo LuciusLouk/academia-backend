@@ -23,7 +23,7 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class JwtService {
-	private static final String SECRET_KEY="${JWT_SECRET_KEY}";
+	private static final String SECRET_KEY="alsdkjalksdjalksdjalksdjlaskdjalskdjlaskdjalskdjalskdjalskdjaslkdj";
 
 	private final IUsuarioService usuarioServiceImp;
 	public String getToken(UserDetails usuario) {
