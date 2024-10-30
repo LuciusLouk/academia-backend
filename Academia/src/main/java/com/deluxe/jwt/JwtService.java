@@ -23,9 +23,7 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class JwtService {
-	@Value("${jwt.secret-key}")
-	private  String secretKey;
-	private final String SECRET_KEY=secretKey;
+	private static final String SECRET_KEY="${JWT_SECRET_KEY}";
 
 	private final IUsuarioService usuarioServiceImp;
 	public String getToken(UserDetails usuario) {

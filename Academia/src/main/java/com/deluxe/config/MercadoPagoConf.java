@@ -7,8 +7,7 @@ import com.mercadopago.MercadoPagoConfig;
 
 //@Configuration
 public class MercadoPagoConf {
-	@Value("${mercado-pago.access-token}")
-	private String mercadoPagoToken;
+	private String mercadoPagoToken = "APP_USR-4973661379136227-070802-76dae679c5b74b901b687930b8eaa869-1892538886";
 	//@Bean
     public void setupMercadoPago() {
         MercadoPagoConfig.setAccessToken(mercadoPagoToken); // Cambia con tu token de acceso
