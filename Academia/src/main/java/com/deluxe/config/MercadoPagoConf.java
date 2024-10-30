@@ -7,7 +7,7 @@ import com.mercadopago.MercadoPagoConfig;
 
 //@Configuration
 public class MercadoPagoConf {
-	@Value("${MP_ACCESS_TOKEN}")
+	@Value("${mercado-pago.access-token}")
 	private String mercadoPagoToken;
 	//@Bean
     public void setupMercadoPago() {
